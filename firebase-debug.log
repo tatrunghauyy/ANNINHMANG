@@ -1,0 +1,66 @@
+[debug] [2024-12-15T13:50:16.660Z] ----------------------------------------------------------------------
+[debug] [2024-12-15T13:50:16.670Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\TN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-12-15T13:50:16.671Z] CLI Version:   13.29.1
+[debug] [2024-12-15T13:50:16.672Z] Platform:      win32
+[debug] [2024-12-15T13:50:16.672Z] Node Version:  v22.12.0
+[debug] [2024-12-15T13:50:16.674Z] Time:          Sun Dec 15 2024 20:50:16 GMT+0700 (Giờ Đông Dương)
+[debug] [2024-12-15T13:50:16.675Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-15T13:50:16.952Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-15T13:50:16.954Z] > authorizing via signed-in user (tatrunhauyy@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\TN
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-12-15T13:50:49.994Z] Using project from CLI flag: fir-1316a
+[debug] [2024-12-15T13:50:49.999Z] Checked if tokens are valid: false, expires at: 1734238879730
+[debug] [2024-12-15T13:50:50.000Z] Checked if tokens are valid: false, expires at: 1734238879730
+[debug] [2024-12-15T13:50:50.000Z] > refreshing access token with scopes: []
+[debug] [2024-12-15T13:50:50.009Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-12-15T13:50:50.010Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-15T13:50:50.451Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-12-15T13:50:50.451Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-12-15T13:50:50.475Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-1316a [none]
+[debug] [2024-12-15T13:50:50.882Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-1316a 200
+[debug] [2024-12-15T13:50:50.882Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-1316a {"projectId":"fir-1316a","projectNumber":"395297872941","displayName":"DEMO","name":"projects/fir-1316a","resources":{"hostingSite":"fir-1316a"},"state":"ACTIVE","etag":"1_7b9793da-a291-4993-a43b-eae4762a6fc5"}
+[info] i  Using project fir-1316a (DEMO) 
+[info] 
+=== Apphosting Setup
+[debug] [2024-12-15T13:50:50.899Z] Checked if tokens are valid: true, expires at: 1734274249452
+[debug] [2024-12-15T13:50:50.900Z] Checked if tokens are valid: true, expires at: 1734274249452
+[debug] [2024-12-15T13:50:50.900Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/fir-1316a/billingInfo [none]
+[debug] [2024-12-15T13:50:52.098Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/fir-1316a/billingInfo 200
+[debug] [2024-12-15T13:50:52.098Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/fir-1316a/billingInfo {"name":"projects/fir-1316a/billingInfo","projectId":"fir-1316a","billingAccountName":"","billingEnabled":false}
+[info] i  Writing default settings to apphosting.yaml... 
+[info] +  Wrote apphosting.yaml 
+[info] +  Create a new App Hosting backend with `firebase apphosting:backends:create` 
+[info] 
+=== Hosting Setup
+[debug] [2024-12-15T13:50:52.114Z] Checked if tokens are valid: true, expires at: 1734274249452
+[debug] [2024-12-15T13:50:52.114Z] Checked if tokens are valid: true, expires at: 1734274249452
+[debug] [2024-12-15T13:50:52.115Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-1316a [none]
+[debug] [2024-12-15T13:50:52.405Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-1316a 200
+[debug] [2024-12-15T13:50:52.405Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-1316a {"projectId":"fir-1316a","projectNumber":"395297872941","displayName":"DEMO","name":"projects/fir-1316a","resources":{"hostingSite":"fir-1316a"},"state":"ACTIVE","etag":"1_7b9793da-a291-4993-a43b-eae4762a6fc5"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

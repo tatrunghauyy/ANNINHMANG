@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCtqfbrvNMK_TYhxey1TAprDFdgJCw0-rs",
+    authDomain: "demoweb-745dc.firebaseapp.com",
+    projectId: "demoweb-745dc",
+    storageBucket: "demoweb-745dc.firebasestorage.app",
+    messagingSenderId: "343520966468",
+    appId: "1:343520966468:web:90027db22ed5827b65c911",
+    measurementId: "G-Q3P3QXL5VW"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            font-size: 24px;
+        }
+        section {
+            margin-top: 50px;
+        }
+        .info {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        .hello {
+            font-size: 30px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        TẠ TRUNG HẬU
+    </header>
+    <section>
+        <div class="info">2124802010703</div>
+        <div class="hello">HELLO WORLD</div>
+    </section>
+</body>
+</html>
